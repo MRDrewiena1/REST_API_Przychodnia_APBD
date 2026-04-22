@@ -1,0 +1,6 @@
+@REST_API_Przychodnia_APBD_HostAddress = http://localhost:5241
+
+GET {{REST_API_Przychodnia_APBD_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
