@@ -38,4 +38,9 @@ public class AppointmentsService : IAppointmentsService
         
         return appointments;
     }
+
+    public async Task<IEnumerable<AppointmentDetailsDto>> GetAppointmentByIdAsync(string idAppointment)
+    {
+        var query = "SELECT IdAppointment, Status FROM Appointments WHERE IdAppointment = @IdAppointment";
+    }
 }

@@ -15,10 +15,17 @@ namespace REST_API_Przychodnia_APBD.Controllers
         }
         
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> GetAllAppointmentsList()
         {
             var appointments = await _appointmentsService.GetAllAppointmentsAsync();
             return Ok(appointments);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetAppointmentDetailsById(string id)
+        {
+            var details = await _appointmentsService.GetAppointmentByIdAsync(id);
+            return Ok(details);
         }
     }
 }
