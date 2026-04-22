@@ -1,6 +1,6 @@
-﻿using Tutorial7.DTOs;
+﻿using REST_API_Przychodnia_APBD.DTOs;
 
-namespace Tutorial7.Services;
+namespace REST_API_Przychodnia_APBD.Services;
 
 public interface IAppointmentsService
 {

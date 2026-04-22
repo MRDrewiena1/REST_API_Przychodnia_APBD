@@ -1,9 +1,7 @@
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Tutorial7.DTOs;
-using Tutorial7.Services;
+using REST_API_Przychodnia_APBD.Services;
 
-namespace Tutorial7.Controllers
+namespace REST_API_Przychodnia_APBD.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

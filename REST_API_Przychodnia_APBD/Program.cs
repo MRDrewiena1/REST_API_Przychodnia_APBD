@@ -1,4 +1,4 @@
-using Tutorial7.Services;
+using REST_API_Przychodnia_APBD.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
